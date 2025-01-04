@@ -1,0 +1,111 @@
+<html>
+<head>   
+    <title> Gallery </title>
+    <link rel="stylesheet" href="mystyle.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="container">
+        <div class ="navbar">
+            <p>JM's Gallery Studio</p>
+            <ul>
+                <li><a href="index.html"> Home </a></li>
+                <li><a href="About.html"> About </a></li>
+                <li><a href="services.html"> Services </a></li>
+                <li><a href="gallery.html"> Gallery </a></li>
+                <li><a href="Contact.html"> Contact </a></li>
+            </ul>
+        </div>
+        <div class="full-img" id="fullImgBox">
+            <img src ="ph1.jpg" height ="300px" width = "360" id="fullImg"> </a>
+            <span onclick="closeFullImg()">X</span>
+
+        </div>
+        <div class = "img-gallery">
+            <hr>
+            <br><br><br>
+        <h1 align="center">Philippines Landscape</h1>
+            <br><br><br>
+            <p align="center" style="font-size:30px;">
+                I’m passionate about exploring the stunning landscapes of the Philippines,<br>
+                 from pristine beaches to scenic mountains and rice terraces.<br>
+                  Capturing these natural wonders through photography inspires me<br>
+                   and deepens my appreciation for the country’s beauty and rich culture.
+            </p>
+            <br><br><br>
+            <div class="column1">
+               
+            <img src ="ph1.jpg" height ="400px" width = "500px"  onclick="openFullImg(this.src)"> 
+            
+            <img src ="ph2.jpg" height ="400px" width = "500px"  onclick="openFullImg(this.src)"> 
+
+            <img src ="ph3.jpg" height ="400px" width = "500px"  onclick="openFullImg(this.src)"> 
+            
+        </div>
+
+        <div class="column1">
+            <img src ="ph4.jpg" height ="400px" width = "500px"  onclick="openFullImg(this.src)"> 
+            <img src ="ph5.jpg" height ="400px" width = "500px"  onclick="openFullImg(this.src)"> 
+            <img src ="ph6.jpg" height ="400px" width = "500px"  onclick="openFullImg(this.src)"> 
+            
+        </div>
+        <hr> 
+        <br><br><br>
+        <h1 align="center">Foreign Landscape</h1>
+        <br><br><br>
+        <p align="center" style="font-size:30px;">
+            I’m fascinated by the diverse landscapes of other countries,<br>
+             from majestic mountains and vast deserts to serene lakes and vibrant cities.<br>
+              Exploring these places allows me to experience different cultures<br>
+                and capture their beauty through photography. It inspires me to see<br>
+                 the world from new perspectives and appreciate the uniqueness of each destination.
+        </p>
+        <br><br><br><br>
+
+
+        <div class="column2">
+            <img src ="jp1.jpg" height ="400px" width = "500px"  onclick="openFullImg(this.src)"> 
+            <img src ="jp3.jpg" height ="400px" width = "500px"  onclick="openFullImg(this.src)"> 
+            <img src ="sk1.jpg" height ="400px" width = "500px"  onclick="openFullImg(this.src)"> 
+            
+            </div>
+
+            <div class="column2">
+                <img src ="sk2.jpg" height ="400px" width = "500px"  onclick="openFullImg(this.src)"> 
+                <img src ="ch1.jpg" height ="400px" width = "500px"  onclick="openFullImg(this.src)"> 
+                <img src ="ch2.jpg" height ="400px" width = "500px"  onclick="openFullImg(this.src)"> 
+                
+            </div>
+        </div>
+        <br><br><br><br>
+        <p align="center" style="font-size:30px;">
+            Photography is my passion and creative outlet.<br> I love capturing moments,
+             exploring different styles, and finding unique perspectives.<br>
+              Whether chasing perfect light or editing photos,<br>
+               it allows me to express myself and share my vision with others.<br>
+               You can contact me on my: 
+            <a href="https://www.facebook.com/jemeowxd" target="_blank">Facebook</a> or <a href="https://www.instagram.com/jem_xxvi/" target="_blank">Instagram</a>.
+        </p>
+<script>
+
+var fullImgBox = document.getElementById("fullImgBox");
+var fullImg = document.getElementById("fullImg");
+
+function openFullImg(pic){
+    fullImgBox.style.display = "flex";
+    fullImg.src = pic;
+}
+
+function closeFullImg(){
+    fullImgBox.style.display = "none";
+}
+
+
+
+</script>
+
+
+
+    </body>
+    </html>
